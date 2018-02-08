@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
- import {gapi} from 'gapi'
 
+const gapi = {}
 let CLIENT_ID = '640301697323-mu3mocshjjp6m85cka04chckpkclhauc.apps.googleusercontent.com'
 let API_KEY = 'rL5OXf02le7ycnrpo13cmiJd'
 
