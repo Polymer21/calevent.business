@@ -1,0 +1,13 @@
+.event-three {
+    grid-area: input3;
+    display: block;
+    background-color: rgb(133, 216, 241);
+    justify-content: fill;
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+}

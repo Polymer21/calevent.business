@@ -1,0 +1,9 @@
+.event-two {
+    grid-area: input2;
+    display: block;
+    background-color: rgb(250, 176, 190);
+    justify-content: fill;
+    
+    margin-left: 5px;
+    margin-right: 5px;
+}

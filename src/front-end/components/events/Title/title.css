@@ -1,0 +1,16 @@
+.title {
+    grid-area: title;
+    display: block;
+    background-color: grey;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+    .date {
+        grid-area: title;
+        justify-self: center;
+        align-self: center;
+    }
