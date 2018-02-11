@@ -1,16 +1,43 @@
 .title {
+    display: grid;
     grid-area: title;
-    display: block;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "instruction "
+    "date"
+    ".";
     background-color: grey;
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
     margin-top: 5px;
     margin-left: 5px;
     margin-right: 5px;
+    justify-content: fill;
 }
-
-    .date {
-        grid-area: title;
+    .title-instruction {
+        grid-area: instruction;
         justify-self: center;
         align-self: center;
     }
+
+    .title-instruction-words {
+        grid-area: instruction;
+        justify-self: center;
+        font-size: 1em;
+        color: white;
+        margin-top: 22.283px;
+        margin-bottom: 9px;
+    }
+    
+
+    .date {
+        grid-area: date;
+        align-self: start;
+        justify-self: center;
+        color: white;
+        font-family: ;
+    }
+        
+        .current-date {
+            margin-top: 4.483px;
+        }

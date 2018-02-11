@@ -1,6 +1,6 @@
 import React, { Component } from 'react' 
 import './CreateEvent.css' 
-import Scrape from '../back-end/Scrape' 
+import Scrape from './Scrape' 
 
 let event = {
     'summary' : 'Weekly Sales Report',
