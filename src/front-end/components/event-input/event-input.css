@@ -1,6 +1,17 @@
-.calendar-container {
-    display: grid;
-    grid-area: calendar-container;  
+.window {
+    grid-area: calendar-container; 
+    display: block;
+    overflow-y: scroll;
+    height: 478px;
+
+    border-style: solid;
+    border-color: pink;
+    border-radius: 20px;
+}
+
+
+.window-grid {
+    display: grid; 
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-row-gap: 5px;
@@ -9,14 +20,10 @@
     "title"
     "input1"
     "input2"
-    "input3";
+    "input3"
+    "input4"
+    "input5";
 
-    width: 100%;
-    height: auto;
-
-    border-style: solid;
-    border-color: pink;
-    border-radius: 20px;
 }
 
 .title {
@@ -34,3 +41,4 @@
 .input3 {
     grid-area: input3;
 }
+
