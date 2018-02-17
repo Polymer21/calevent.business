@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
-import './Home.css'
-import EventInput from '../../components/event-input/event-input' 
-import Scrape from './../../../Providers/Scrape'
+import './Home.css' 
+import Calendar from '../../components/Calendar/Calendar'
 
 class Home extends Component {
     render() {
         return (
             <div className='Home'>
-                <Scrape/>
-                <EventInput/>
+                <Calendar/>
             </div>
         )
     }

@@ -1,0 +1,12 @@
+.calendar-slide-out-create-button {
+    grid-area: create;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgb(130, 79, 248);
+    animation: fadein 3s;
+}
+    .create-button-words {
+        font-size: 35px;
+        color: white;
+        margin: 0;
+}

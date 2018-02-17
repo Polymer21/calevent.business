@@ -1,16 +1,11 @@
-.window {
-    grid-area: calendar-container; 
-    display: block;
-    overflow-y: scroll;
-    height: 478px;
-
-    border-style: solid;
-    border-color: pink;
-    border-radius: 20px;
+.event-container {
+    overflow-y: scroll;    
+    height: 473px;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
-
-
-.window-grid {
+.event-container-grid {
     display: grid; 
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -23,7 +18,10 @@
     "input3"
     "input4"
     "input5";
+    width: 288px;
 
+   
+    z-index: 2;
 }
 
 .title {
@@ -41,4 +39,3 @@
 .input3 {
     grid-area: input3;
 }
-

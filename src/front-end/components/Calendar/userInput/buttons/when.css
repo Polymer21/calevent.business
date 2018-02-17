@@ -1,0 +1,15 @@
+.calendar-slide-out-when-button {
+    grid-area: when;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: lightblue;
+    background-color: lightblue;
+    animation: fadein 3s;
+}
+
+    .when-button-words {
+        font-size: 35px;
+        color: white;
+        margin: 0;
+
+}

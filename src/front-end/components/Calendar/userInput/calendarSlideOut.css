@@ -1,0 +1,105 @@
+@keyframes calendar-slide-out-animation {
+    0% {
+        width: 0;
+        opacity: 0%;
+    }
+
+
+    100% {
+        width: 863px;
+        opacity: 100%;
+    }
+
+
+}
+
+@keyframes calendar-slide-in-animation {
+    0% {
+        width: 863px;
+    }
+    100% {
+        width: 0;
+        opacity: 0%;
+    }
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+.calendar-slide-out-container {
+    display: grid;
+    grid-area: input;
+    grid-template-columns: 
+    1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .10fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    '. . . . . . . . events events events events'
+    '. title title title title title title . events events events events '
+    '. when when when . . . . events events events events'
+    '. . . .  where where where . events events events events'
+    'who who who . . . sm sm events events events events' 
+    '. . . . . . sm sm events events events events '
+    '. create create . . cancel cancel . events events events events'
+    ;
+
+    height: 472px;
+    position: fixed;
+    top:325px;
+    right:300px;
+    border-style: solid;
+    border-color: pink;
+    border-radius: 20px;
+    grid-row-gap: 10px;
+
+    z-index: -1;
+    animation: calendar-slide-out-animation 2s forwards;
+width:863px;
+
+}
+
+.hidden-state {
+    opacity: 0;
+}
+
+.calendar-slide-out-title {
+    grid-area: title;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: pink;
+    font-size: 20px;
+    font-family: Helvetica;
+    text-align: center;
+    animation: fadein 3s;
+}
+
+.calendar-slide-out-special-message-button {
+    grid-area: sm;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgb(250, 250, 98);
+    animation: fadein 3s;
+}
+    .special-message-button-words {
+        font-size: 30px;
+        color: white;
+        margin: 0;
+}
+
+
+
+.calendar-slide-out-cancel-button {
+    grid-area: cancel;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgb(245, 89, 89);
+    animation: fadein 3s;
+}
+    .cancel-button-words {
+        font-size: 35px;
+        color: white;
+        margin: 0;
+}

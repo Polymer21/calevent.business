@@ -1,16 +1,19 @@
 import React, { Component } from 'react'
-import './title.css'
-import $ from 'jquery'
+import './title-child.css'
 
-$('.title').click(function() {
-    window.location = $(this).find("a").attr("href"); 
-    return false;
-});
+// state = {
+//     events: ''
+// }
 
 class Title extends Component {
+    
+    handleClick = () => {
+        
+    }
+
     render() {
         return (
-            <div className='title' ahref='google.com'>
+            <div onClick={this.handleClick} className='title' >
                 <div className='title-instruction'>
                     <h2 className='title-instruction-words'>
                         Go ahead, select your best date. </h2>
@@ -23,4 +26,4 @@ class Title extends Component {
     }
 }
 
-export default Title
+export default Title 

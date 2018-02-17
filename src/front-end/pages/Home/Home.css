@@ -1,17 +1,14 @@
 .Home {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr 1fr auto;
     grid-template-areas: 
-    ". . . . ."
-    ". . . calendar-container ."
-    ". . . . ."
-    ". . . . ."
-    
-    ;
-
-    height: 1440px;
-    width: 100%; 
-
+    '. . .'
+    '. . .'
+    '. calendar .';
+    position: absolute;
+    top: 325px;
+    right: 300px;
+    width: 863px;
     
 }

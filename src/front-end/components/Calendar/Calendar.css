@@ -1,0 +1,6 @@
+.calendar-container {
+    grid-area: calendar;
+    grid-template-columns: auto auto;
+    top: 0;
+    right: 0px;
+}

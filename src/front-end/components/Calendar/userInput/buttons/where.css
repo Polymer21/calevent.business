@@ -1,0 +1,15 @@
+.calendar-slide-out-where-button {
+    grid-area: where;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: lightyellow;
+    background-color: lightpink;
+    animation: fadein 3s;
+    
+}
+    .where-button-words {
+        font-size: 35px;
+        color: white;
+        margin: 0;
+
+}

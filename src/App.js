@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Home from './front-end/pages/Home/Home'
-
-import Scrape from "../src/Providers/Scrape"
+// import Scrape from "../src/Providers/Scrape"
 
 class App extends Component {
 
@@ -11,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <Home/>
-        <Scrape/>
+        {/* <Scrape/> */}
       </div>
     );
   }
