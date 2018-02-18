@@ -13,16 +13,13 @@ class Calendar extends Component {
         this.setState((prev,props) => ({calendarSlideOutIsVisible: !prev.calendarSlideOutIsVisible})) 
     }
 
-    eventClickExit = () => {
-        this.setstate({calendarSlideOutIsVisible: true})
-        
-    }
+
 
     render() {
         console.log(this.state)
         return(
             <div className='calendar-container'>
-                <CalendarSlideOut isVisible={this.state.calendarSlideOutIsVisible}/>
+                <CalendarSlideOut isVisible={this.state.calendarSlideOutIsVisible} />
                 <EventContainer eventClick={this.eventClick}/>
             </div>
         )
