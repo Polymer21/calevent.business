@@ -2,8 +2,8 @@
     overflow-y: scroll;    
     height: 473px;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 300px;
+    top: 325px;
 }
 .event-container-grid {
     display: grid; 

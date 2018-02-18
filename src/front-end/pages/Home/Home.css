@@ -1,14 +1,11 @@
 .Home {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: 1fr 1fr auto;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 75px 10fr 10fr;
     grid-template-areas: 
-    '. . .'
-    '. . .'
-    '. calendar .';
-    position: absolute;
-    top: 325px;
-    right: 300px;
-    width: 863px;
-    
+    'lt-sidebar nav rt-sidebar'
+    'lt-sidebar home-top rt-sidebar'
+    'lt-sidebar home-bottom rt-sidebar';
+    height: 100vh;
+    width: 100vw;
 }

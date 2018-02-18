@@ -1,0 +1,27 @@
+.number-of-events-container {
+    grid-area: events;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    'number-of-events-title number-of-events';
+
+    background-color: lightgreen
+}
+
+.events-title {
+    grid-area: number-of-events-title;
+    justify-self: center;
+    align-self: center;
+    font-size: 8vh;
+    color: white;
+    font-family: impact;
+}
+
+.number {
+    grid-area: number-of-events;
+    justify-self: center;
+    align-self: center;
+    color: white;
+    font-size: 8vh;
+    font-family: impact;
+}

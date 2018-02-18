@@ -1,0 +1,27 @@
+.groups-container{
+    grid-area: groups;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    'number-groups groups-title';
+
+    background-color: lightcoral;
+}
+
+.groups-title {
+    grid-area: groups-title;
+    justify-self: center;
+    align-self: center;
+    font-size: 8vh;
+    color: white;
+    font-family: impact;
+}
+
+.groups-number {
+    grid-area: number-groups;
+    justify-self: center;
+    align-self: center;
+    color: white;
+    font-size: 8vh;
+    font-family: impact;
+}

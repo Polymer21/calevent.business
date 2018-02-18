@@ -7,6 +7,7 @@ import When from './front-end/components/Calendar/userInput/buttons/when'
 import Where from './front-end/components/Calendar/userInput/buttons/where'
 import WhoPopout from './front-end/components/Calendar/userInput/popouts/whoPopout'
 import UserPage from './front-end/pages/User/userPage'
+import Login from './front-end/pages/User/Login/login'
 
 class Routes extends Component {
     render(){
@@ -16,7 +17,8 @@ class Routes extends Component {
                     <div>
                         <Route exact path='/' component={Home}/>
                         <Route path='/who' component={WhoPopout}/>
-                        <Route path='/userdashboard' component={UserPage}/>
+                        <Route exact path='/userdashboard' component={UserPage}/>
+                        <Route path='/userdashboard/login' component={Login}/>
                     </div>
                 </Router>
             </main>

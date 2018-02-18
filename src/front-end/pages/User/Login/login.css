@@ -1,0 +1,100 @@
+.login-page-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .5fr .5fr 3fr 1fr;
+    grid-template-areas: 
+    '. . nav'
+    '. . .'
+    '. login .'
+    '. . .'; 
+    height: 100vh;
+    width: 100vw;
+}
+
+.login-component{
+    grid-area: login;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+    '. login-title .'
+    '. input .'
+    '. initiate .';
+
+    border-style: solid;
+    border-color: pink;
+    background-color: rgb(241, 241, 123);
+    border-radius: 15px;
+}
+
+.login-title{
+    grid-area: login-title;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    '.'
+    'title-main'
+    'title-words'
+}
+
+    .title-main{
+        grid-area: title-main;
+        text-align: center;
+        margin: 0;
+        color: rgb(243, 150, 167);
+    }
+
+    .login-title-words {
+        grid-area: title-words;
+        color: blue;
+        font-size: 20px;
+        margin: 0;
+        text-align: center;
+    }
+
+.input-container{
+    grid-area: input;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 10px;
+}
+
+.username-input{
+    text-align: center;
+    font-size: 20px;
+}
+
+.password-input{
+    text-align: center;
+    font-size: 20px;
+}
+
+.initiate-login-container {
+    grid-area: initiate;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    '.'
+    'button'
+    '.';
+}
+
+.initiate-login-link {
+    grid-area: button;
+    justify-self: center;
+}
+
+.initiate-login-button {
+    grid-area: button;
+    height: 7vh;
+    width: 10vw;
+    background-color: rgb(0, 140, 255);
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.initiate-login-words {
+    margin: 0;
+    font-size: 20px;
+    color: white;
+}
