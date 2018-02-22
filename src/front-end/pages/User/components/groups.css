@@ -25,3 +25,16 @@
     font-size: 8vh;
     font-family: impact;
 }
+
+.groups-list-container {
+    display: grid;
+    grid-template-rows: 
+    1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+    'edit group1 delete'
+    'edit group2 delete'
+    'edit group3 delete'
+    'edit group4 delete'
+    'edit group5 delete'
+}

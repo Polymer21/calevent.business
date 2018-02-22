@@ -5,6 +5,10 @@
     border-color: lightyellow;
     background-color: lightpink;
     animation: fadein 3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 21;
     
 }
     .where-button-words {

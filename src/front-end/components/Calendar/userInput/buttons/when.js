@@ -1,22 +1,34 @@
 import React, { Component } from 'react'
 import './when.css' 
+import WhoPopout from '../popouts/whoPopout'
 
 class When extends Component {
 
     state = {
-        isClicked: true
+        isClicked: 'hidden'
     }
-
-    buttonClick = () => {
-        this.setState((prev, props) => ({isClicked: !prev.isClicked}))
-            console.log(this.isClicked)
-        }
-
     render() {
         return (
-            <button className={this.props.Clicked ?'calendar-slide-out-when-button' : 'calendar-slide-out-when-button'} onClick={this.buttonClick}>
+            <div>
+            <button onClick={() => {
+                console.log('show')
+                this.setState({
+                    isClicked: 'show'
+                })
+            }} className='calendar-slide-out-when-button'>
                 <p className='when-button-words'>When?</p>
             </button>
+            <div className={this.state.isClicked}>
+            <WhoPopout input="when" />
+            </div>
+            <button className={`close-button ${this.state.isClicked}`} 
+            onClick={() => {
+                this.setState({
+                    isClicked: 'hidden'
+                })
+            }}>
+            </button>
+            </div>
         )
     }
 }

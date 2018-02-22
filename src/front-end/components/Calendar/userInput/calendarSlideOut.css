@@ -55,7 +55,7 @@
     border-radius: 20px;
     grid-row-gap: 10px;
 
-    z-index: -1;
+    z-index: 21;
     animation: calendar-slide-out-animation 2s forwards;
 width:863px;
 

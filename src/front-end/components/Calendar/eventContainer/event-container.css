@@ -4,6 +4,7 @@
     position: absolute;
     right: 300px;
     top: 325px;
+    z-index: 22;
 }
 .event-container-grid {
     display: grid; 

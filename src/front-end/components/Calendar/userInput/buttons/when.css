@@ -5,6 +5,9 @@
     border-color: lightblue;
     background-color: lightblue;
     animation: fadein 3s;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
     .when-button-words {
@@ -13,3 +16,4 @@
         margin: 0;
 
 }
+

@@ -1,0 +1,92 @@
+.who-popout-container {
+    display: grid;
+    grid-template-rows: .25fr 1fr 1fr .25fr 1fr .25fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    '. . exit'
+    'groups-title groups-title groups-title'
+    'group1 group2 group3'
+    'group1-name group2-name group3-name'
+    'group4 group5 .'
+    'group4-name group5-name .';
+
+    height: 322px;
+    width: 400px;
+    background-color: pink;
+    border-radius: 18px;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.groups-title {
+    grid-area: groups-title;
+    margin: 0;
+}
+
+.group-one {
+    grid-area: group1;
+    height: 10vh;
+    width: 5vw;
+    justify-self: center;
+    align-self: center;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: blue;
+}
+
+.group-two {
+    grid-area: group2;
+    height: 10vh;
+    width: 5vw;
+    justify-self: center;
+    align-self: center;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: purple;
+}
+
+.group-three {
+    grid-area: group3;
+    height: 10vh;
+    width: 5vw;
+    justify-self: center;
+    align-self: center;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: forestgreen;
+}
+
+.group-four {
+    grid-area: group4;
+    height: 10vh;
+    width: 5vw;
+    justify-self: center;
+    align-self: center;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: white;
+}
+
+.group-five {
+    grid-area: group5;
+    height: 10vh;
+    width: 5vw;
+    justify-self: center;
+    align-self: center;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: red;
+}
+
+.close-button{
+    grid-area: exit;
+    z-index: 9999;
+    height: 5vh;
+    width: 5vw;
+    position: absolute;
+    right: 430px;
+    top: 10px;
+}

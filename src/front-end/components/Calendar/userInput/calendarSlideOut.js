@@ -8,9 +8,6 @@ import Create from './buttons/create'
 
 
 class CalendarSlideOut extends Component {
-    state = {
-        isClicked: false,
-    }
 
     buttonClick = () => {
         this.setState((prev, props) => ({ isClicked: !prev.isClicked }))
@@ -20,7 +17,7 @@ class CalendarSlideOut extends Component {
         return (
             <div id='slideout' className={this.props.isVisible ? 'calendar-slide-out-container' : 'hidden-state'}>
                 <input type='text' placeholder='What comes to mind when you think ..Title?' className='calendar-slide-out-title' />
-                <When Clicked={this.state.isClicked} />
+                <When/>
                 <Where />
                 <Who />
                 <button className='calendar-slide-out-special-message-button'>
