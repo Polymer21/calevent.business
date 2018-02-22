@@ -19,7 +19,7 @@ class Calendar extends Component {
         console.log(this.state)
         return(
             <div className='calendar-container'>
-                <CalendarSlideOut isVisible={this.state.calendarSlideOutIsVisible} />
+                <CalendarSlideOut isVisible={this.state.calendarSlideOutIsVisible} id={this.props.id} />
                 <EventContainer eventClick={this.eventClick}/>
             </div>
         )

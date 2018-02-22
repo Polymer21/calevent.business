@@ -19,6 +19,7 @@ class Routes extends Component {
                         <Route path='/who' component={WhoPopout}/>
                         <Route exact path='/userdashboard' component={UserPage}/>
                         <Route path='/userdashboard/login' component={Login}/>
+                        <Route path='/event/:id' component={Home}/> 
                     </div>
                 </Router>
             </main>

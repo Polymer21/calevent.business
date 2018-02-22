@@ -3,10 +3,14 @@ import gql from 'graphql-tag'
 
 export const whoEventMutation = gql`
 mutation(
-    $id: ID
+    $emailId: String!
 ){
     createEvent(
-        id: $id
-    )
+        who: $emailId
+        // who is expecting an object and we shouldnt be trying to create an event if
+        one already exists. ID is auto generated
+    ){
+        id 
+    }
 }
 `;

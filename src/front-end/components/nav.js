@@ -8,13 +8,13 @@ class Nav extends Component {
         return (
             <div className='nav-container'>
                 <Link to='/userdashboard/login' className='login-link'>
-                    <button Link to='/userdashboard/login' type='button' onClick='/userdashboard/login' className='user-login'>
+                    <button className='user-login'>
                         <p className='user-login-words'>Login</p>
                     </button>
                 </Link>
                 
                 <Link to='/' className='home-link'>
-                    <button onClick='/' className='home-button'>
+                    <button className='home-button'>
                         <p className='user-home-words'>Home</p>
                     </button>
                 </Link>

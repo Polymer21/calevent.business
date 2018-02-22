@@ -13,6 +13,8 @@ class Who extends Component {
     }
 
     render() {
+        console.log('match', this.props.match)
+        console.log('our event id', this.props.id)
         if (!this.props.data.allWhoes) {
             return <div> Loading </div>
         }
@@ -29,7 +31,7 @@ class Who extends Component {
                 </p>
             </button>
            <div className={this.state.isClicked}>
-            <WhoPopout input="who" email={this.props.data.allWhoes[0].email} id={this.props.data.allWhoes[0].id}/>
+            <WhoPopout input="who" email={this.props.data.allWhoes[0].email} whoId={this.props.data.allWhoes[0].id} id={this.props.id}/>
             </div>
             <div className={`close-button ${this.state.isClicked}`} 
             onClick={() => {
@@ -39,7 +41,6 @@ class Who extends Component {
             }}>
                 X
             </div>
-    {this.props.data.allWhoes[0].email}
             </div>
         )
     }
@@ -50,5 +51,9 @@ query { allWhoes {
     email id
 }}`
 
-
+const mapStateToProps = (state) => {
+    return{
+        id: state.id
+    }
+}
 export default graphql(query)(Who)

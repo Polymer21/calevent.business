@@ -19,7 +19,7 @@ class CalendarSlideOut extends Component {
                 <input type='text' placeholder='What comes to mind when you think ..Title?' className='calendar-slide-out-title' />
                 <When/>
                 <Where />
-                <Who />
+                <Who id={this.props.id}/>
                 <button className='calendar-slide-out-special-message-button'>
                     <p className='special-message-button-words'>
                         Special Message
