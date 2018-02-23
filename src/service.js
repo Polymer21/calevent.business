@@ -1,16 +1,31 @@
-import { graphql } from 'react-apollo'
 import gql from 'graphql-tag'
 
 export const whoEventMutation = gql`
 mutation(
-    $emailId: String!
+    $id: ID!
+    $whoId: [ID!]
 ){
-    createEvent(
-        who: $emailId
-        // who is expecting an object and we shouldnt be trying to create an event if
-        one already exists. ID is auto generated
+    updateEvent(
+        id: $id
+        whoesIds: $whoId
+      
     ){
-        id 
+      whoes{
+        email id
+      }
     }
 }
 `;
+
+export const deleteEvent = gql`
+mutation(
+    $id: ID!
+){
+    deleteEvent(
+        id: $id
+    )
+    {
+        id
+    }
+}
+`

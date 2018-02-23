@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import './event-child.css'
 import {Link} from 'react-router-dom'
-// import props from 'prop-types'
-// import EventData from './eventData'
 
 
 class EventChild extends Component {

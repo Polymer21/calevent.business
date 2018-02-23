@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { withRouter, Redirect } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 import {graphql} from 'react-apollo'
 import './who-popout.css'
 import { whoEventMutation } from '../../../../../service'
@@ -12,9 +12,9 @@ class WhoPopout extends Component {
     }
 
     updateEvent = () => {
-        console.log('WHOID', this.props.whoId)
         this.props.mutate({
             variables: {
+                id: this.props.id,
                 whoId: this.props.whoId
             }
         }).then((res) => {
@@ -25,7 +25,6 @@ class WhoPopout extends Component {
     }
 
     render() {
-        console.log(this.props.id)
 
         if (this.props.input === 'who') {
             return <div className='who-popout-container'>

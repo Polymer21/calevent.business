@@ -14,13 +14,14 @@ class EventContainer extends Component {
 
 
     eventChildren = () => {
-        console.log('Event children props', this.props)
+
         if (!this.props.data || !this.props.data.allEvents) {
             return null
         }
         return this.props.data.allEvents.map((event) => {
-            console.log('this inside of this', event.id)
-            return (<EventChild id={event.id} eventClick={this.props.eventClick} time={event.when} />)
+            return (<EventChild id={event.id}
+                eventClick={this.props.eventClick}
+                time={event.when} />)
         })
     }
 
@@ -31,12 +32,13 @@ class EventContainer extends Component {
                 <div className='event-container-grid'>
                     <Title />
                     {this.eventChildren()}
-                    
+
                 </div>
             </div>
         )
     }
 }
+
 const query = gql`
     query{
         allEvents{
@@ -44,6 +46,5 @@ const query = gql`
         }
     }
 `
-
 
 export default graphql(query)(EventContainer)

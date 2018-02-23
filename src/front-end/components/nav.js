@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './nav.css'
-import {BrowserRouter as Router, Link, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Link} from 'react-router-dom'
 
 
 class Nav extends Component {
@@ -16,6 +16,12 @@ class Nav extends Component {
                 <Link to='/' className='home-link'>
                     <button className='home-button'>
                         <p className='user-home-words'>Home</p>
+                    </button>
+                </Link>
+                
+                <Link to='/userdashboard' className='user-link'>
+                    <button className='user-button'>
+                        <p className='user-home-words'>User</p>
                     </button>
                 </Link>
 

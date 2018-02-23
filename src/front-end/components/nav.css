@@ -4,7 +4,7 @@
     grid-template-columns: 
     1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    'home . . login'
+    'home . login user'
 }
 
 .login-link {
@@ -17,6 +17,13 @@
 
 .home-link{
     grid-area: home;
+    align-self: center;
+    justify-self: center;
+    border-radius: 5px;
+}
+
+.user-link{
+    grid-area: user;
     align-self: center;
     justify-self: center;
     border-radius: 5px;
@@ -42,6 +49,15 @@
     height: 7vh;
     width: 10vw;
     background-color: rgb(218, 105, 247);
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.user-button {
+    grid-area: home;
+    height: 7vh;
+    width: 10vw;
+    background-color: rgb(243, 139, 234);
     border-style: solid;
     border-radius: 5px;
 }

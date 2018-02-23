@@ -6,13 +6,6 @@ import WhoPopout from '../../components/Calendar/userInput/popouts/whoPopout'
 
 class Home extends Component {
     
-    componentWillMount() {
-   console.log(this.props.match.params.id)
-        // if (!this.props.match) {
-        //     console.log("MATCH",this.props.match)
-        // }
-    }
-    
     render() {
         return (
             <div className='Home'>

@@ -7,9 +7,7 @@ class Login extends Component {
     render() {
         return (
             <div className='login-page-container'>
-                <Router>
                     <Nav />
-                </Router>
                 <div className='login-component'>
                     <div className='login-title'>
                         <h1 className='title-main'>
